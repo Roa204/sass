@@ -1,0 +1,94 @@
+CARPETAS:
+-Base: Elemento html, tablas, encabezado, botones, textos, formularios, links, tipografia...
+-Lib: mixins, funciones, variables - settings... 
+-Layout: Componentes juntos para armar la web...encabezado, footer, body, columnas...
+-Componentes: grids, utilities(align right,left,float left right);estos casi siempre modifican un valor predefino entonces se importan de ultimo
+
+
+-   Sass es un Pre - procesador para mejorar nuestro codigo en css, simplificarlo
+El css dentro del html va en DESARROLLO no en produccion
+Diferencias entre Sass, Stylus y Less
+
+less: Es muy simple,se usa para proyectos pequenos
+Sass: Te da un buen soporte en la comunidad, un buen desarrollo, buenas preguntas y respuestas.
+Stylus: Mas complejo 
+
+Depende delproyecto para utilizar el procesador, y del equipo.
+
+-   Todo lo que hagamos en sass va ser complilado en un archivo css, 
+-   Los archivos de sass van con .scss para saber si se complila 
+
+codeKit 
+Prepros
+Gold
+Webpack
+
+La ventaja de los procesadores es Organizar el Sass, separa el codigo en archivos, porque ya tenemos todo organizado y sabemos que es lo que afecta
+esto los hacemos con @import
+
+Para que no complile el archivo creado ponemos onderscor(_) antes del nombre  ( Va hacer un parcial se va a compilar donde lo importemos)
+
+-   Las variables son elementos que podemos definir y asignarle un valor específico
+-   Con (&) Llamamos al padre dentro de las anidaciones 
+-   Block Element Modifier = BEM
+.Block {
+
+	&__Element {
+
+		&--Modifier {
+
+		}
+	}
+}
+Para referirnos al padre usamos &
+
+https://smacss.com/book/categorizing
+https://www.youtube.com/watch?v=KTt39DjPpmo
+https://www.youtube.com/watch?v=R5-IzA0SAqI
+
+-   Los mixins permiten definir estilos reutilizables en toda la hoja de estilos, tambien permiten reusar declaraciones.
+
+-    Se definen con la directiva @mixin seguida del nombre del mixin Los mixins se incluyen en las hojas de estilos mediante la directiva @include seguida del nombre del                                       mixin y opcionalmente por una lista de argumentos
+
+-   Pueden depender de un parametro: 
+-   Parametro del mixin: Es un argumento al que le podemos asignar un valor cuando  declaramos el mixin o cuando lo implementamos
+
+-   el mixins con content crea un break point con el mismo selector y nos include el contenido puesto
+
+-   @extend con %(placeholder) toma los datos del css y se pueden extender a otras clases sin duplicar el codigo
+-   El placeholder (%) funcionada desde el extend y ayuda a no repetir código en la hoja de estilo, agrupando a los bloques o elementos que tenga el mismo contenido
+-   @extend le indica a Sass que un determinado selector debería heredar todos los estilos de otro selector.
+
+-   FUNCIONES
+
+Vienen definidas, para aclarar oscurecer un color, trasperecias,saturar.. muchas.... eliminar comillas...
+DIFERENCIAS ENTRE MIXINS Y FUNCIONES
+
+Funciones se pueden incluir a un valor de una propiedad, una funcion a un valor, trabajar mas a profundo de una propiedad
+
+-   los mixins pueden crear propiedades y generar valores a las propiedades, pero la funcion nos permite directamente modificar el valor de propiedades
+
+-   Para crear funciones es con @funtion
+
+Tecnica DRY, no repetir nada., los procesadores es para no repetir nada Don't repeat yourself
+
+Las FUNCIONES tambien pueden trabajar con arrays, Sass lo toma como MAPAS que es una lista(una variable con un conjunto de valores)
+
+DIRECTIVAS DE CONTROLES DE FLUJO
+
+Directiva @each, recorre lo que le digamos, cuantas veces lo a cumplir. un loop o bucle
+
+SMACSS  Scalable and modular architecture, arquitectura modular y escalable
+Base, tema, estados, Layout, modules
+
+Base: Aplicados a elementos HTML, no clases no id, es decir al Body,ul, img ..
+Tema: Look and feel, es decir estilos y colores que establecemos, tipografias
+Estados: Estilos de cambios de estados, elementosque aparecen y desaparecen, is-hide....is-show
+Layout: Maquetacion sin estilos de tema, las columnas a 25%, main 75%...lo responsive
+modules: Componentes que se repiten botones, iconos, widgets(lgin, suscribirse).
+
+
+
+
+
+
