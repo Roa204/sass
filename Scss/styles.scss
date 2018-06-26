@@ -1,0 +1,29 @@
+// $color : red!default;
+// $color2 : blue!default;
+// $color3 : green!default;
+
+//  .div{
+//      background-color: $color2;
+//  }
+
+//librerias , settings, variables
+@import "lib/variables";
+@import "lib/mixins";
+@import "lib/funciones";
+//Elementos base
+@import "base/buttons";
+@import "base/links";
+@import "base/tipografia";
+
+//Componentes (columnas)
+@import "components/grids";
+
+//Layout
+@import "layout/layout";
+
+
+//Tablas
+@import "tablas/tablas";
+
+//Modifican un valor re-establecido, por eso se deja de  ultimo, no se elimine cuando se incluya
+@import  "components/utilities";

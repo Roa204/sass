@@ -1,0 +1,48 @@
+/*------------------------*\
+    $BUTTONS
+\*------------------------*/
+
+%btn1{
+    display: inline-block;
+    color: $buttoncolor;
+    background-color: $buttonbackgroundcolor;
+    line-height: 2.2;
+    width: $width;
+    border-radius: $border-radius;
+    font-size: $buttonfontzise;
+}
+.btn{
+    @extend %btn1;
+    //Cuando lleva (__ Doble) es un elemento del bloque de btn del principal
+    &__icon{
+        font-size: .6em;
+    }
+// Cuando lleva (--Doble) es una modificacion
+    &--info{
+        background-color: $color-info;
+    }
+    //Todo esto se llama BEM  boton, element, modificate
+
+    &:hover{
+        background-color: $color-secondary;
+    }
+    
+}
+.btn--secondary{
+    @extend %btn1;
+    background-color: firebrick;
+
+    &:hover{
+        background-color: lightblue;
+        color: $color-black;
+    }
+}
+//Una funcion con sus respectivos parametros
+@function suma ($nu1, $nu2){
+    @return $nu1+$nu2;
+}
+.fun1{
+    padding: suma(10px, 5px);
+    background-color: $color-invert;
+    color: $color-white;
+}

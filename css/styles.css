@@ -1,0 +1,178 @@
+/*------------------------*    $COLORS
+\*------------------------*/
+/*
+* Branding Colors
+*/
+/*------------------------*    $MIXINS
+\*------------------------*/
+/*------------------------*    $FUNCIONES
+\*------------------------*/
+.normal {
+  font-weight: normal; }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-weight: italic; }
+
+.class-1:before {
+  content: "1"; }
+
+.class-2:before {
+  content: "2"; }
+
+.class-3:before {
+  content: "3"; }
+
+.class-4:before {
+  content: "4"; }
+
+.ifclass {
+  background: wheat;
+  width: 100px;
+  height: 100px; }
+
+.ifclass {
+  background: #333333;
+  padding: padding(black); }
+
+.col-1 {
+  width: 8.33333; }
+
+.col-offset-1 {
+  margin-left: 8.33333; }
+
+.col-2 {
+  width: 16.66667; }
+
+.col-offset-2 {
+  margin-left: 16.66667; }
+
+.col-3 {
+  width: 25; }
+
+.col-offset-3 {
+  margin-left: 25; }
+
+.col-4 {
+  width: 33.33333; }
+
+.col-offset-4 {
+  margin-left: 33.33333; }
+
+.col-5 {
+  width: 41.66667; }
+
+.col-offset-5 {
+  margin-left: 41.66667; }
+
+.col-6 {
+  width: 50; }
+
+.col-offset-6 {
+  margin-left: 50; }
+
+.col-7 {
+  width: 58.33333; }
+
+.col-offset-7 {
+  margin-left: 58.33333; }
+
+.col-8 {
+  width: 66.66667; }
+
+.col-offset-8 {
+  margin-left: 66.66667; }
+
+.col-9 {
+  width: 75; }
+
+.col-offset-9 {
+  margin-left: 75; }
+
+.col-10 {
+  width: 83.33333; }
+
+.col-offset-10 {
+  margin-left: 83.33333; }
+
+.col-11 {
+  width: 91.66667; }
+
+.col-offset-11 {
+  margin-left: 91.66667; }
+
+.col-12 {
+  width: 100; }
+
+.col-offset-12 {
+  margin-left: 100; }
+
+/*------------------------*    $BUTTONS
+\*------------------------*/
+.btn, .btn--secondary {
+  display: inline-block;
+  color: white;
+  background-color: #737373;
+  line-height: 2.2;
+  width: 70px;
+  border-radius: 3px;
+  font-size: 24px; }
+
+.btn__icon {
+  font-size: .6em; }
+
+.btn--info {
+  background-color: #42b8dd; }
+
+.btn:hover {
+  background-color: #dbd879; }
+
+.btn--secondary {
+  background-color: firebrick; }
+  .btn--secondary:hover {
+    background-color: lightblue;
+    color: black; }
+
+.fun1 {
+  padding: 15px;
+  background-color: black;
+  color: white; }
+
+/*------------------------*    $LINKS
+\*------------------------*/
+/*------------------------*    $TGRAFIA
+\*------------------------*/
+/*------------------------*    $GRIDS
+\*------------------------*/
+section {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  background-color: #dbd879;
+  padding: 25px; }
+  @media only screen and (max-width: 800px) {
+    section {
+      background-color: #b3b3b3; } }
+
+.max-width--huge {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px; }
+
+header {
+  background-color: #ea83ee; }
+
+/*------------------------*    $TABLA
+\*------------------------*/
+table tr:hover {
+  background-color: #dbd879; }
+
+.mapa {
+  font-size: 24px; }
+
+/*------------------------*    $UTILITIES
+\*------------------------*/

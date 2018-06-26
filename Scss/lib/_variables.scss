@@ -1,0 +1,44 @@
+/*------------------------*\
+    $COLORS
+\*------------------------*/
+/*
+* Branding Colors
+*/
+
+$color-brand: #ea83ee;
+$color-secondary: rgb(219, 216, 121);
+
+$color-black : rgb(0,0,0);
+
+$color-gray : #737373;
+//Usamos la variable lighten para aclarar el color y con una coma,deciamos cuanto
+// Hay tambien funciones como: opacify(, 0.3), transparentize(, 0.25)
+$color-darkgray : darken($color-gray, 25%);
+$color-lightgrey : lighten($color-gray, 25%);
+$color-white : rgb(255,255,255);
+
+//con la funcion invert, no tiene un parametro como la otra que era 25, va hacer el inverso a ese color en este caso se vuelve black 
+$color-invert: invert($color-white);
+
+//Texturas, alerta
+$color-alert: red;
+$color-error: darkred;
+$color-info: rgb(66, 184, 221);
+$color-Success: rgb(91, 183, 91);
+
+//Tipografia
+$basefont: "Quicksand", sans-serif;
+$basefontsize: 16px;
+//Para crear una lista en sass lo hacemos separando por espacio se usa en funcuines con each
+$font-weight: normal bold italic;
+
+//Botones
+$buttoncolor: $color-white;
+$buttonbackgroundcolor: $color-gray;
+$buttonfontzise: $basefontsize * 1.5;
+
+//Constantes
+$border-radius: 3px;
+$padding: 25px;
+$page-max-width: 800px;
+$width: 70px;

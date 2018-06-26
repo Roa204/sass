@@ -1,0 +1,25 @@
+/*------------------------*\
+    $MIXINS
+\*------------------------*/
+
+//mixin con parametro ancho maximo ESTAN EN LAYOUT
+@mixin max-width($maxwidth: $page-max-width) {
+    max-width: $maxwidth;
+    // las margenes se centran asi
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px; 
+}
+
+// break points mixins para controlar la resolucion de un elemento dependiendo la resolucion
+//sirve para el responsing desing
+
+// mixins con content crea un break point con el mismo selector y nos include el contenido puesto
+
+// @content nos permite anadir, incluir un bloque de contenido a un mixin, eso es lo que hace @content permite pasarle un bloque de estilos a un mixin. 
+@mixin respond-to($width){
+    // esto tiene que ir dentro de un bloque para que cree el css de este selector
+    @media only screen and (max-width: $width) {
+        @content;
+    }
+}

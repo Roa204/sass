@@ -1,0 +1,10 @@
+/*------------------------*\
+    $TABLA
+\*------------------------*/
+table tr:hover{
+    background-color: $color-secondary;
+}
+// Llamamos al mapa y su respectivo nombre con su respectiva lista o Mapa, esto esta en funciones
+.mapa{
+    font-size: map-get($fs, big );
+}

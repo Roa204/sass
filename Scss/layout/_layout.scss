@@ -1,0 +1,22 @@
+
+//mixins con content crea un break point con el mismo selector (section) y se incluye el contenido puesto
+section {
+    @include max-width;
+    background-color: $color-secondary;
+    padding: $padding;
+    // Este es el content , todo lo de aca de imprime en el content
+    @include respond-to(800px){
+        background-color: $color-lightgrey;
+    }
+}
+
+//Incluyendo el mismo mixin pero cambiando su parametro, modificandolo a gusto
+//huge=grande
+.max-width--huge{
+    // 1400px o 80%
+    @include max-width(1400px);
+}
+
+header{
+    background-color: $color-brand;
+}

@@ -1,0 +1,60 @@
+/*------------------------*\
+    $FUNCIONES
+\*------------------------*/
+
+
+//fs=font-size, creamos un array o un MAPA(es una lista) mas conocido asi, el mapa llama con map-get en la clase que va a llevar
+$fs:(
+    big: 24px,
+    nomal: 16px,
+    small: 14px,
+    x-small: 12px,
+);
+
+$superposicion:(
+    abajo: 1,
+    mitad: 2,
+    arriba: 3,
+);
+
+//DIRECTOVAS CON EACH
+// para escapar la clase (scape)se hace entre llaves y #, para que sepa Sass que es una variable hay que escaparla 
+// $font-weight tipos de fuentes que estan en una lista en variables
+// el each es un loop va creciendo a medida que la lista se incrementa
+@each $font in ($font-weight){
+    .#{$font} {font-weight: $font;}
+}
+//DIRECTIVA CON FOR 
+@for $i from 1 to 5{
+    .class-#{$i}{
+    &:before{
+            content: "#{$i}";
+        }
+    }
+}
+
+//DIRECTIVA CON CONDICIONALES
+// para hacer nuevos colores o nuevas modificaciones si se cumple el condifional
+.ifclass{
+    background: wheat;
+    width: 100px;
+    height: 100px;
+}
+$background-color: black;
+@if($background-color == black){
+    .ifclass{
+        background: $color-darkgray;
+        padding: padding($background-color);
+        
+    }
+}
+
+// reto
+@for $i from 1 to 13 {
+    .col-#{$i} {
+      width: #{($i/12)*100};
+    }
+    .col-offset-#{$i} {
+      margin-left: #{($i/12)*100};
+    }
+  }
